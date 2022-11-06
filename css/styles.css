@@ -311,7 +311,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-    background: #188CE8
+    background-color: #188CE8;
 }
 
 
@@ -1061,6 +1061,8 @@ textarea {
 }
 
 .form-checkbox {
+    display: flex;
+    align-items: center;
 }
 label {
     font-size: 12px;
@@ -1080,13 +1082,16 @@ textarea:focus {
 }
 
 .lead-icon:focus {
-    color: var(--color-blue);
+    background-color: var(--color-blue);
   }
 
 .checkbox:checked + .checkbox-icon {
+    
+    
     background-color: var(--color-blue);
     border-color: var(--color-blue);
-    background-image: url(../img/submit.svg);
+    background-image: url(../img/icon_check.svg);
+
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
@@ -1134,7 +1139,9 @@ textarea:focus {
     margin-left: 5px;
 }
 
-
+.modal-window:focus ~ .lead-icon {
+    fill: var(--color-blue);
+  }
 
 .form-icon {
     fill: var(--color-black);
