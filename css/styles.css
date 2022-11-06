@@ -969,6 +969,8 @@ form {
     line-height: 1.15;
     text-align: center;
     margin-bottom: 12px;
+    color: rgba(33, 33, 33, 1);
+    
 }
 .modal-form::placeholder {
     font-size: 12px;
@@ -989,9 +991,16 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--color-primary);
 }
-.madal-window {
-}
+.modal-window:focus {
+    border-color: var(--color-blue);
+  }
+
 .comment {
 }
 .modal-window {
@@ -1023,16 +1032,25 @@ textarea:focus {
 
 }
 
-.checkbox:checked {
+.checkbox:checked + .checkbox-icon {
     background-color: var(--color-blue);
-  border-color: var(--color-blue);
-  background-image: url(../img/sprite.svg#icon-Vector-3-1);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-origin: border-box;
+    border-color: var(--color-blue);
+    background-image: url('../img/sprite.svg/icon-Vector-3-1');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-origin: border-box;
 }
 
+.checkbox-icon {
+    display: inline-block; 
+      width: 16px;
+      height: 15px;
+      border: 2px solid black;
+      border-radius: 4px;
+      margin-right: 7px;
+    
+    } 
 .form-submit {
     display: block;
     background-color:var(--color-blue);
@@ -1052,13 +1070,21 @@ textarea:focus {
   color var(--transition-duration) var(--transition-timing-function); 
 }
 
-.form-submit:focus,
 .form-submit:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.form-submit:hover {
-    background-color: #2196f3;
+
+.form-link {
+    color: var(--color-blue);
+    text-decoration: underline;
+    margin-left: 5px;
 }
+
+
+
+.form-icon {
+    fill: var(--color-black);
+} 
