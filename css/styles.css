@@ -1086,7 +1086,7 @@ textarea:focus {
 .checkbox:checked + .checkbox-icon {
     background-color: var(--color-blue);
     border-color: var(--color-blue);
-    background-image: url('../img/sprite.svg/icon-Vector-3-1');
+    background-image: url(../img/submit.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
