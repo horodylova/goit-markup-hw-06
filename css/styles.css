@@ -955,8 +955,15 @@ img {
     background-color: #fff;
 
     cursor: pointer;
+    position: absolute;
 
 }
+
+.modal-button:hover,
+.modal-button:focus {
+    color: var(--color-blue);
+}
+
 
 .form {
     width: 448px;
