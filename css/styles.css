@@ -629,6 +629,7 @@ img {
 
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 
 .address-mail {
@@ -654,6 +655,10 @@ img {
     letter-spacing: 00.03em;
     color: var(--color-white);
 
+}
+
+.address-list {
+    gap: 9px;
 }
 
 .footer-icon {
@@ -688,6 +693,17 @@ img {
 .footer-input {
     display: flex;
     align-items: center;
+}
+
+.footer-input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.colortext {
+    color: var(--background-second);
 }
 
 .footer-button {
@@ -916,6 +932,10 @@ img {
     visibility: hidden;
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
 .modal {
     padding: 40px;
     position: absolute;
@@ -935,7 +955,7 @@ img {
 }
 
 .close-icon {
-    fill: pink;
+    fill: currentColor;
 }
 
 .modal-button {
@@ -1000,6 +1020,10 @@ textarea {
     display: flex;
     flex-direction: column;
 
+}
+
+.lead-form:not(last-child) {
+    margin-bottom: 10px;
 }
 
 .lead-form input {
@@ -1078,6 +1102,10 @@ label {
     color: var();
 }
 
+.modal-window {
+    height: 40px;
+}
+
 .modal-window:focus,
 textarea:focus {
    
@@ -1128,6 +1156,10 @@ textarea:focus {
     text-align: center;
     margin: 0 auto;
 
+    font-size: 16px;
+    line-height: 1.87;
+
+
     transition: background-color var(--transition-duration)
     var(--transition-timing-function),
   color var(--transition-duration) var(--transition-timing-function); 
@@ -1152,4 +1184,10 @@ textarea:focus {
 
 .form-icon {
     fill: var(--color-black);
+
 } 
+
+.text-submit {
+    font-size: 14px;
+    line-height: 1.71;
+}

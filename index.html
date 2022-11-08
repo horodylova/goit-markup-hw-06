@@ -19,7 +19,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="./css/modal.css">
   </head>
   <body class="page">
     <header class="header">
@@ -369,7 +368,7 @@
           <a href="" class="link logo footer-logo"
             ><span class="logo-decorate">Web</span>Studio</a>
           <address class="address">
-            <ul>
+            <ul class="address-list">
               <li class="list">
                   <p class="post-address">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
@@ -420,7 +419,7 @@
         <div class="footer-form">
           <h3 class="form-title">Підпишіться на розсилку</h3>
           <form action="" class="footer-input">
-            <input type="email" placeholder="E-mail">
+            <input type="email" placeholder="E-mail" class="colortext">
             <button type="submit" class="footer-button">Підписатися
             <svg width="24" height="24" class="email-button">
               <use href="./img/sprite.svg#icon-icon-send-1"></use>
@@ -432,9 +431,9 @@
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="modal-button">
+            <button data-modal-close class="modal-button" type="button">
               <svg class="close-icon" height="18" width="18">
-                <use href="./img/antenna 1 (1).svg"></use>
+                <use href="./img/sprite.svg#icon-Vector-7-1"></use>
               </svg>
               </button>
             
@@ -443,7 +442,7 @@
             <label class="lead-form">Ім'я
               <input type="text" name="name" id="name" class="modal-window" required>
               <svg class="lead-icon" width="18" height="18">
-              <use href="./img/sprite.svg#icon-Vector-2-1"></use>
+              <use href="./img/sprite.svg#icon-Vector-6-1"></use>
             </svg>
             </label>
             <label class="lead-form"> Телефон
@@ -462,10 +461,10 @@
             </label>
             <div class="form-check">
               <label class="form-checkbox">
-              <input type="checkbox" class="checkbox" name="policy" value="Погоджуюся з розсилкою та приймаю Умови договору">
+              <input type="checkbox" class="checkbox text-submit" name="policy" value="Погоджуюся з розсилкою та приймаю Умови договору">
               <!-- <svg class="form-icon" width="16" height="15">
               <use href="./img/sprite.svg#icon-Vector-4-1"></use></svg> -->
-              <span class="checkbox-icon"></span>Погоджуюся з розсилкою та приймаю<a href="" class="link form-link">Умови договору</a>
+              <span class="checkbox-icon"></span>Погоджуюся з розсилкою та приймаю<a href="" class="link form-link text-submit">Умови договору</a>
             </label>
             </div>
             <button type="submit" class="form-submit">Відправити</button>
